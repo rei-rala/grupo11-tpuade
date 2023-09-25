@@ -1,92 +1,28 @@
+@import 'globals.css';
+
+.home {
+    max-height: 100vh;
+    overflow: hidden;
+}
+
 .background{
     background: url(img/1612886489140.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 200vh;
-    width: 100%;
+    height: 100%;
+    max-width: 100%;
     background-position: center top;
 }
-@media (max-width: 576px){
-    .background{
-        background-size:cover;
-        height: 120vh;
-    }
-}
-@media (max-width: 992px){
-    .background{
-        background-size:cover;
-        height: 105vh;
-    }
-}
 
-body{
-    background-color: #ffffff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-header{
-    text-align: center;
-    flex-wrap: wrap;
-    background-color: #47c076;
-    width: 100%; 
-    height: 40px; 
-    border-radius: 5px;
-    margin-top: 0%;
-}
-@media (max-width: 576px){
-    header{
-        height: 30px;
-    }
-}
-@media (max-width: 992px){
-    header{
-        height: 35px;
-    }
-}
-h1{
-    color: black;
-    font-family: Georgia, 'Times New Roman', Times, serif ;
-    font-size: 1.8rem;
-    text-align: center;
-    flex-wrap: wrap;
-}
-@media (max-width: 576px){
-    h1{
-        font-size: 1.3rem;
-        flex-direction: column;
-    }
-}
-@media (max-width: 992px){
-    h1{
-        font-size: 1.5rem;
-        flex-direction: column;
-    }
-}
 .barra{
     background-color: #47c076;
     width: 100%; 
-    height: 30px; 
-    margin-top: 1%;
-    margin-bottom: 10px;
     border-radius: 5px;
     flex-wrap: wrap;
 }
-@media (max-width: 576px){
-    .barra{
-        height: 40px;
-    }
-}
-@media (max-width: 992px){
-    .barra{
-        height: 35px;
-    }
-}
+
 .menu{
-    list-style: none;
     display: flex;
-    padding: 0;
-    margin: 0;
-    margin-top: 15px;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -96,50 +32,20 @@ h1{
     text-align: center;
     flex-wrap: wrap;
 }
-@media (max-width: 576px){
-    .menuli{
-        font-size: 0.8rem;
-    }
-}
-@media (max-width: 992px){
-    .menuli{
-        font-size: 0.8rem;
-    }
-}
-a{
-    text-decoration: none;
-    flex-wrap: wrap;
-}
+
+
 .cuerpo{
     display:flex;
     width: 100%;
-    margin: 0px;
-    padding: 0px;
-    left: 0%;
-    right: 0%;
     border-radius: 5px;
     flex-wrap: nowrap;
-}
-@media (max-width:576px){
-    .cuerpo{
-        margin: 1px;
-        gap: 2%;
-        flex-direction: column;
-        
-    }
-}
-@media (max-width: 992px){
-    .cuerpo{
-        margin: 1px;
-        gap: 2%;  
-        flex-direction: column; 
-    }
-
 }
 .acerca{
     width: 25%;
     display: flex;
+    justify-content: center;
     border-color: #222426;
+    text-align: center;
     border: 2px solid;
     border-radius: 5px;
     padding: 2%;
@@ -147,16 +53,6 @@ a{
     left: 0%;
     right: 0%;
     flex-wrap:wrap; 
-}
-@media (max-width: 576px){
-    .acerca{
-        width: 45%;
-    }
-}
-@media (max-width: 992px){
-    .acerca{
-        width: 40%;
-    }
 }
 .nombre{
     text-decoration: none;
@@ -170,64 +66,9 @@ a{
     border-radius: 5px;
     flex-wrap: wrap;
 }
-@media (max-width: 576px){
-    .foto{
-        width: 90px;
-        height: 90px;
-    }
 
-}
-@media (max-width: 992px){
-    .foto{
-        width: 100px;
-        height: 100px;
-    }
-}
-h2{
-    display: block;
-    font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    flex-wrap: wrap;
-    
-}
-@media (max-width: 576px){
-    h2{
-        font-size: 0.9rem;
-        margin-block-start:0.60rem ;
-        margin-block-end: 0.60rem;
-        margin-left: 1px;
-        margin-top: 0%;
-    }
-}
-@media (max-width: 992px){
-    h2{
-        font-size: 0.9rem;
-        margin-block-start:0.60rem ;
-        margin-block-end: 0.60rem;
-        margin-left: 0px;
-        margin-top: 0%;
-    }
-}
-a:hover {
-    background-color: #ffffff;
-    cursor: pointer;
-    border-radius: 5px;
-    flex-wrap: wrap;
-}
-@media (max-width: 576px){
-    a:hover{
-        border-radius: 2px;
-    }
-}
-@media (max-width: 992px){
-    a:hover{
-        border-radius: 3px;
-    }
-}
+
+
 
 .contenedorTituloHome{
     font-family: arial black;
@@ -237,6 +78,7 @@ a:hover {
     background-repeat: no-repeat;
 }
 .textoHome{
+    text-align: center;
     color: #fff;
     padding-top: 80px;
     font-size: 2.8rem;
@@ -245,24 +87,12 @@ a:hover {
     width: 100%;
     text-shadow: 3px 3px 10px #000;
     flex-wrap: wrap;  
+    font-size: 1.6rem;
+    flex-wrap: wrap;
+}
 
-}
-@media (max-width: 576px){
-    .textoHome{
-        font-size: 1.9rem;
-        flex-wrap: wrap
-
-    }
-}
-@media (max-width){
-    .textoHome{
-        font-size: 1.6rem;
-        flex-wrap: wrap;
-    }
-}
 .h1Home{
     color: #fff;
-    font-family: Georgia, 'Times New Roman', Times, serif ;
     font-size: 1.8rem;
     text-align: center;
     text-shadow: 3px 3px 10px #000;
@@ -270,51 +100,26 @@ a:hover {
 }
 .pHome{
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif ;
     font-size: 1.8rem;
     color: #fff;
     text-shadow: 3px 3px 10px #000;
     flex-wrap: wrap;
 }
-@media (max-width: 576px){
-    .pHome{
-        font-size: 0.9rem;
 
-    }
-}
-@media (max-width: 992px){
-    .pHome{
-        font-size: 1rem;
-
-    }
-}
 .pServ{
-    text-align:justify;
-    font-family: Georgia, 'Times New Roman', Times, serif ;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: justify;
     font-size: 1.3rem;
     color: #fff;
-    text-shadow: 3px 3px 10px #000;
-    flex-wrap: wrap;
+    
     width: 75%;
-    margin-left: 1%;
-
-}
-@media (max-width: 576px){
-    .pServ{
-        font-size: 0.9rem;
-
-    }
-}
-@media (max-width: 992px){
-    .pServ{
-        font-size: 1rem;
-
-    }
+    max-width: 80ch;
+    margin: auto;
 }
 
 .aServ{
     text-align:justify;
-    font-family: Georgia, 'Times New Roman', Times, serif ;
     font-size: 1.3rem;
     color: #fff;
     text-shadow: 3px 3px 10px #000;
@@ -323,13 +128,69 @@ a:hover {
     text-decoration: underline;
     
 }
+
 @media (max-width: 576px){
+    .menuli{
+        font-size: 0.8rem;
+    }
+    .cuerpo{
+        margin: 1px;
+        gap: 2%;
+        flex-direction: column;
+    }
+    .acerca{
+        width: 45%;
+    }
+
+    .foto{
+        width: 90px;
+        height: 90px;
+    }
+
+    .textoHome{
+        font-size: 1.9rem;
+        flex-wrap: wrap
+    }
+
     .aServ{
         font-size: 0.9rem;
     }
+
+    .pServ{
+        font-size: 0.9rem;
+    }
+
+    .pHome{
+        font-size: 1.2rem;
+    }
 }
+
+
 @media (max-width: 992px){
+    .barra{
+        height: 35px;
+    }
+    .menuli{
+        font-size: 0.8rem;
+    }
+    .cuerpo{
+        flex-direction: column; 
+    }
+    .acerca{
+        width: 40%;
+    }
+    .foto{
+        width: 100px;
+        height: 100px;
+    }
     .aServ{
         font-size: 1rem;
+    }
+    .pServ{
+        font-size: 1rem;
+    }
+
+    .pHome{
+        font-size: 1.5rem;
     }
 }
