@@ -54,7 +54,12 @@
     border: 2px solid;
     border-radius: 5px;
     padding: 1rem; 
-    background-color: #47c076;
+    background: #47c076;
+    transition: background 150ms;
+}
+
+.acerca:hover {
+  background: white;
 }
 
 .nombre {
@@ -62,7 +67,8 @@
 }
 
 .foto{
-    max-height: 40vh;
+    max-height: 300px;
+    max-width: 150px;
     width: 100%;
     border-radius: 5px;
     flex-wrap: wrap;
@@ -77,20 +83,19 @@
     width: 100%;
     background-repeat: no-repeat;
 }
+
 .textoHome{
     text-align: center;
     color: #fff;
-    padding-top: 80px;
+    margin: 60px 0 40px 0;
     font-size: 2.8rem;
-    margin-top: 0;
-    margin-bottom: 40px;
     width: 100%;
     text-shadow: 3px 3px 10px #000;
     font-size: 1.6rem;
     flex-wrap: wrap;
 }
 
-.h1Home{
+.h2Home{
     color: #fff;
     font-size: 1.8rem;
     text-align: center;
@@ -111,7 +116,6 @@
     text-align: justify;
     font-size: 1.3rem;
     color: #fff;
-    
     width: 75%;
     max-width: 80ch;
     margin: auto;
@@ -128,6 +132,11 @@
     
 }
 
+.integrantesTitle {
+  flex-grow: 1;
+  width: 100%;
+}
+
 @media (max-width: 576px){
     .menuli{
         font-size: 0.8rem;
@@ -135,7 +144,8 @@
 
     .textoHome{
         font-size: 1.9rem;
-        flex-wrap: wrap
+        flex-wrap: wrap;
+        margin: 30px 0 20px 0;
     }
     .foto{
       min-width: 100%;
@@ -159,6 +169,7 @@
     }
 
     .pServ{
+      width: 100%;
         font-size: 0.9rem;
     }
 
