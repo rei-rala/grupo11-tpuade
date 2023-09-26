@@ -2,11 +2,6 @@
   box-sizing: border-box;
 }
 
-.background-wrapper {
-  position: fixed;
-  z-index: -1;
-}
-
 body {
   display: flex;
   flex-direction: column;
