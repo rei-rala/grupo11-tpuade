@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+.background-wrapper {
+  position: fixed;
+  z-index: -1;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -9,7 +14,7 @@ body {
 
   overflow: hidden scroll;
   min-height: 100vh;
-  padding: 2vh;
+  padding: 1rem;
   margin: 0;
 
   background-color: #000;
@@ -74,6 +79,7 @@ footer {
     font-size: 1.3rem;
     flex-direction: column;
   }
+
   h2 {
     font-size: 0.9rem;
     margin-block-start: 0.6rem;
@@ -81,6 +87,7 @@ footer {
     margin-left: 1px;
     margin-top: 0%;
   }
+
   a:hover {
     border-radius: 2px;
   }
@@ -91,6 +98,7 @@ footer {
     font-size: 1.5rem;
     flex-direction: column;
   }
+
   h2 {
     font-size: 0.9rem;
     margin-block-start: 0.6rem;
@@ -98,6 +106,7 @@ footer {
     margin-left: 0px;
     margin-top: 0%;
   }
+
   a:hover {
     border-radius: 3px;
   }
