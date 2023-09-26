@@ -7,7 +7,7 @@ body {
   flex-direction: column;
   gap: 1rem;
 
-  overflow: hidden auto;
+  overflow: hidden scroll;
   min-height: 100vh;
   padding: 2vh;
   margin: 0;
@@ -58,6 +58,15 @@ p {
 ul {
   list-style-type: none;
   padding: 0;
+}
+
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(to right, rgba(71, 192, 118, 0), rgba(71, 192, 118, 0.5), rgba(71, 192, 118, 0));
 }
 
 @media (max-width: 576px) {
